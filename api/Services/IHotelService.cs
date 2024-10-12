@@ -1,4 +1,5 @@
 using api.Models;
+using api.Models.DTOs;
 
 public interface IHotelService
 {
@@ -7,4 +8,5 @@ public interface IHotelService
 	void AddHotel(Hotel hotel);
 	void UpdateHotel(int id, Hotel updatedHotel);
 	void DeleteHotel(int id);
+	List<SearchResultDTO> SearchForHotels((double, double) geolocation, int page, int pageSize);
 }

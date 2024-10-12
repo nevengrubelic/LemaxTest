@@ -20,9 +20,12 @@ public class HotelsController : ControllerBase
 	}
 
 	// GET: api/hotels/{id}
-	[HttpGet("{id}")]
+	[HttpGet("{id:int}")]
 	public IActionResult Get(int id)
 	{
+		if (!ModelState.IsValid)
+			return BadRequest(ModelState);
+
 		var hotel = _hotelService.GetHotelById(id);
 		if (hotel == null)
 		{
@@ -35,14 +38,20 @@ public class HotelsController : ControllerBase
 	[HttpPost]
 	public IActionResult Post([FromBody] Hotel hotel)
 	{
+		if (!ModelState.IsValid)
+			return BadRequest(ModelState);
+
 		_hotelService.AddHotel(hotel);
 		return CreatedAtAction(nameof(Get), new { id = hotel.Id }, hotel);
 	}
 
 	// PUT: api/hotels/{id}
-	[HttpPut("{id}")]
+	[HttpPut("{id:int}")]
 	public IActionResult Create(int id, [FromBody] Hotel updatedHotel)
 	{
+		if (!ModelState.IsValid)
+			return BadRequest(ModelState);
+
 		var hotel = _hotelService.GetHotelById(id);
 		if (hotel == null)
 		{
@@ -53,9 +62,12 @@ public class HotelsController : ControllerBase
 	}
 
 	// DELETE: api/hotels/{id}
-	[HttpDelete("{id}")]
+	[HttpDelete("{id:int}")]
 	public IActionResult Delete(int id)
 	{
+		if (!ModelState.IsValid)
+			return BadRequest(ModelState);
+
 		var hotel = _hotelService.GetHotelById(id);
 		if (hotel == null)
 		{
