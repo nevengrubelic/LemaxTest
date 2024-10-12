@@ -31,3 +31,4 @@ C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\refint\api.
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.pdb
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.sourcelink.json
