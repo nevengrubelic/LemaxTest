@@ -17,6 +17,7 @@ C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.Assembl
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.csproj.CoreCompileInputs.cache
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.sourcelink.json
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\staticwebassets\msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,4 +32,3 @@ C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\refint\api.
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.pdb
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\ref\api.dll
-C:\Users\grube\Desktop\Posao\projekti\LemaxTest\api\obj\Debug\net8.0\api.sourcelink.json

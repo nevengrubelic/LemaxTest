@@ -17,30 +17,33 @@ public class HotelService : IHotelService
 		return hotel;
 	}
 
-	public void AddHotel(Hotel hotel)
+	public bool AddHotel(Hotel hotel)
 	{
 		Hotels.Add(hotel);
+		return true;
 	}
 
-	public void UpdateHotel(int id, Hotel updatedHotel)
+	public bool UpdateHotel(int id, Hotel updatedHotel)
 	{
 		var hotel = GetHotelById(id);
-		if (hotel != null)
-		{
-			hotel.Name = updatedHotel.Name;
-			hotel.Price = updatedHotel.Price;
-			hotel.Latitude = updatedHotel.Latitude;
-			hotel.Longitude = updatedHotel.Longitude;
-		}
+		if (hotel == null)
+			return false;
+
+		hotel.Name = updatedHotel.Name;
+		hotel.Price = updatedHotel.Price;
+		hotel.Latitude = updatedHotel.Latitude;
+		hotel.Longitude = updatedHotel.Longitude;
+		return true;
 	}
 
-	public void DeleteHotel(int id)
+	public bool DeleteHotel(int id)
 	{
 		var hotel = GetHotelById(id);
-		if (hotel != null)
-		{
-			Hotels.Remove(hotel);
-		}
+		if (hotel == null)
+			return false;
+
+		Hotels.Remove(hotel);
+		return true;
 	}
 
 	public List<SearchResultDTO> SearchForHotels((double, double) geolocation, int page, int pageSize)
@@ -63,5 +66,10 @@ public class HotelService : IHotelService
 			.ToList();
 
 		return paginatedHotels;
+	}
+
+	public void CleanHotelList()
+	{
+		Hotels.Clear();
 	}
 }

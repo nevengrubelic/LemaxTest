@@ -5,8 +5,8 @@ public interface IHotelService
 {
 	List<Hotel> GetAllHotels();
 	Hotel GetHotelById(int id);
-	void AddHotel(Hotel hotel);
-	void UpdateHotel(int id, Hotel updatedHotel);
-	void DeleteHotel(int id);
+	bool AddHotel(Hotel hotel);
+	bool UpdateHotel(int id, Hotel updatedHotel);
+	bool DeleteHotel(int id);
 	List<SearchResultDTO> SearchForHotels((double, double) geolocation, int page, int pageSize);
 }
